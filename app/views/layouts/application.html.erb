@@ -8,9 +8,16 @@
 </head>
 <body>
   
+  <!--Build navigation here -->
+  <%= render 'layouts/navigation' %>
   <%= render 'layouts/messages' %>
   
+  <!--To have it contained in middle-->
+  <div class='container'>
   <%= yield %>
+  </div>
+
+<%= render 'layouts/footer' %>
 
 </body>
 </html>
